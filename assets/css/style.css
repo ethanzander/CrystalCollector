@@ -1,13 +1,23 @@
 .crystal-image{
-	size: 30%;
+	size: 25%;
+}
+.panel-heading{
+	color: white;
 }
 .panel-body{
-	color: black;
+	color: white;
+	background: transparent;
+	border: solid 1px white;
+	margin-top: 0;
+	padding-top: 0;
+}
+.panel-default{
+	background: transparent;
+	border: 0;
 }
 .jumbotron{
 	background: purple;
 }
-
 body{
 	background: black;
 	color: white;

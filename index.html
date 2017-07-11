@@ -23,16 +23,13 @@
 		</div>
 	</nav>
 	
-	<div class="main contianer container-fluid">
-		<div class="jumbotron">
-  		<h1>Crystal Collector Game</h1>
+	<div class="main container-fluid">
+		<div class="jumbotron" style="background-image: url(assets/images/crystalJumboBackground.jpg); background-size: 100% 100%;">
+  			<h1>Crystal Collector Game</h1>
+  			<p><strong>How to play:</strong></p>
+			<p><strong>Select the crystals by clicking on them. Each crystal has a hidden value. On each click the crystal value will be added to your total. Try to match your total to the target # displayed. If you go over you lose. If you can match it you win!</strong</p>
 		</div>
-			<div class="row">
-				<div class="col-md-12">
-					<p>How to play:</p>
-					<p>Select the crystals by clicking on them. Each crystal has a hidden value. On each click the crystal value will be added to your total. Try to match your total to the target # displayed. If you go over you lose. If you can match it you win!</p>
-				</div>
-			</div>
+		<div class="row">
 			<div class="panel panel-default col-md-2">
 					<h4 class="panel-heading">Scoreboard</h4>
 					<div class="panel-body">
@@ -51,22 +48,25 @@
 					<h4 id="your-total">0</h4>
 					</div>
 			</div>
+		</div>
 			<br>
-				<div class="col-md-6 container-fluid">
-					<button class="crystal-image" id="blue-crystal" value="1">
-					<img src="assets/images/blueCrystal.png" style="width:25%;">
-					</button>
-					<button class="crystal-image" id="green-crystal" value="2">
-					<img src="assets/images/greenCrystal.png" style="width:25%;">
-					</button>
-					<button class="crystal-image" id="purple-crystal" value="3">
-					<img src="assets/images/purpleCrystal.png" style="width:25%;">
-					</button>
-					<button class="crystal-image" id="red-crystal" value="4">
-					<img src="assets/images/redCrystal.png" style="width:25%;">
-					</button>
-				</div>
-		
+		<!-- <div class="row"> -->
+			<div class="col-md-12 btn-group">
+				<button type="button" class="btn btn-default" id="blue-crystal" value="1">
+					<img src="assets/images/blueCrystal.png" style="width:200px;">
+				</button>
+				<button type="button" class="btn btn-default" id="green-crystal" value="2">
+					<img src="assets/images/greenCrystal.png" style="width:200px;">
+				</button>
+				<button type="button" class="btn btn-default" id="purple-crystal" value="3">
+					<img src="assets/images/purpleCrystal.png" style="width:200px;">
+				</button>
+				<button type="button" class="btn btn-default" id="red-crystal" value="4">
+					<img src="assets/images/redCrystal.png" style="width:200px;">
+				</button>
+			</div>
+			</div>
+		<!-- </div> -->
 	</div>
 
 

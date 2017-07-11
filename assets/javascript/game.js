@@ -61,7 +61,7 @@ $('.crystal-image').on('click', function(){
 
   } 
   else if (yourTotal > targetNumber){
-    var lostNewGame = confirm("BUST! You went over " + targetNumber +". Do you want to play again")
+    var lostNewGame = confirm("BUST! You went over " + targetNumber +". Do you want to play again?")
     if (lostNewGame == true) {
       playAgain();
       var addLost = parseInt($('#number-lost').text());
