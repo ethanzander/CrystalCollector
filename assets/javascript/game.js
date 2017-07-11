@@ -1,6 +1,8 @@
 
 $( document ).ready(function() {
 //Variables
+var wins = 0;
+var losts = 0;
 var targetNumber = getTargetnumber();
 var yourTotal = 0;
 var blueCrystalValue = getCrystalValue();
@@ -8,6 +10,8 @@ var greenCrystalValue = getCrystalValue();
 var purpleCrystalValue = getCrystalValue();
 var redCrystalValue = getCrystalValue();
 // Set Game values
+$('#number-wins').text(wins);
+$('#number-lost').text(losts);
 $('#target-number').text(targetNumber);
 $('#your-total').text(yourTotal);
 $('#blue-crystal').val(blueCrystalValue);
@@ -51,6 +55,8 @@ $('.crystal-image').on('click', function(){
     var winNewGame = confirm("You win! Your crystals equal " + targetNumber + ". Do you want to play again?")
     if (winNewGame == true) {
       playAgain();
+      var addWin = parseInt($('#number-wins').text());
+      $('#number-wins').text(addWin+1);
     }
 
   } 
@@ -58,6 +64,8 @@ $('.crystal-image').on('click', function(){
     var lostNewGame = confirm("BUST! You went over " + targetNumber +". Do you want to play again")
     if (lostNewGame == true) {
       playAgain();
+      var addLost = parseInt($('#number-lost').text());
+      $('#number-lost').text(addLost+1);
     }
   }
 });
