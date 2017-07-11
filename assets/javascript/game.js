@@ -58,7 +58,6 @@ $('.crystal-image').on('click', function(){
       var addWin = parseInt($('#number-wins').text());
       $('#number-wins').text(addWin+1);
     }
-
   } 
   else if (yourTotal > targetNumber){
     var lostNewGame = confirm("BUST! You went over " + targetNumber +". Do you want to play again?")
