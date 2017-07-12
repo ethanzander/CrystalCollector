@@ -67,7 +67,7 @@ $('.crystal-image').on('click', function(){
   } 
   else if (yourTotal > targetNumber){
     var numberDif = (yourTotal - targetNumber);
-    var lostNewGame = confirm("BUST! You went over " + targetNumber + " by " + numberDif + ". Do you want to play again?")
+    var lostNewGame = confirm("BUST! You went over the " + targetNumber + " target crystals by " + numberDif + " crystals. Do you want to play again?")
     if (lostNewGame == true) {
       var addLost = parseInt($('#number-lost').text());
       $('#number-lost').text(addLost+1);
