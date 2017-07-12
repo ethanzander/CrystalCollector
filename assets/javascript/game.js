@@ -54,25 +54,29 @@ $('.crystal-image').on('click', function(){
   if (yourTotal == targetNumber) {
     var winNewGame = confirm("You win! Your crystals equal " + targetNumber + ". Do you want to play again?")
     if (winNewGame == true) {
-      playAgain();
       var addWin = parseInt($('#number-wins').text());
       $('#number-wins').text(addWin+1);
+      playAgain();
     }
     else{
       var addWin = parseInt($('#number-wins').text());
       $('#number-wins').text(addWin+1);
+      alert("Just one more time won't hurt... We are haveing fun!");
+      playAgain();
     }
   } 
   else if (yourTotal > targetNumber){
     var lostNewGame = confirm("BUST! You went over " + targetNumber +". Do you want to play again?")
     if (lostNewGame == true) {
-      playAgain();
       var addLost = parseInt($('#number-lost').text());
       $('#number-lost').text(addLost+1);
+      playAgain();
     }
     else{
       var addLost = parseInt($('#number-lost').text());
       $('#number-lost').text(addLost+1);
+      alert("Just one more time won't hurt... We are having fun!");
+      playAgain();
     }
   }
 });
