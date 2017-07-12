@@ -22,7 +22,12 @@ body{
 	background: black;
 	color: white;
 }
-
+p {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.3);
+}
 button{
 	background: black;
 	border: 0;
